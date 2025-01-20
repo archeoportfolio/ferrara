@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth" x-data="{
+      darkMode: localStorage.getItem('darkMode')
+      || localStorage.setItem('darkMode', 'light')}"
+      x-init="$watch('darkMode', val => localStorage.setItem('darkMode', val))"
+      x-bind:class="{'dark': darkMode === 'dark' || (darkMode === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches)}">
+  <head>
+    <title>Chai Studio - AI Enabled Tailwind Builder App</title>
+<meta name="twitter:card" content="summary_large_image">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/venobox/2.1.8/venobox.min.css"
+    />
+  </head>
+  <body class="font-body antialiased">
+  <section class="my-[50px] xl:my-[50px]">
+    <div class="container mx-auto py-10 px-[31px] md:px-[33px] xl:px-[10px]">
+      <h2
+        class="font-mono text-center font-semibold capitalize text-gray-800 dark:text-white text-[20px] md:text-[25px] lg:text-4xl xl:font-mono xl:text-[30px] xl:text-center">
+        Museo di Paleontologia e Preistoria “Piero Leonardi”
+      </h2>
+      <p class="font-mono text-center xl:font-mono xl:text-center">Le sperimentazioni dell'RTI</p>
+      <p class="font-mono text-center xl:font-mono xl:text-center">15.01.2025</p>
+    </div>
+    <div class="font-heading container mx-auto px-6 py-10 xl:font-heading xl: xl:px-[0px] xl:py-[25px]">
+      <div class="grid grid-cols-2 lg:grid-cols-4">
+        <div class="w-full overflow-hidden rounded-b-lg bg-white/60 backdrop-blur-sm dark:bg-gray-800/60 px-2 py-2">
+          <img
+            src="./assets/1dentepliosauro.png"
+            alt=""
+            loading="lazy"
+            height=""
+            width="" />
+          <a
+            class="font-mono mt-4 block font-semibold text-gray-800 hover:underline dark:text-white text-[15px] text-center md:text-[20px] xl:font-mono xl:text-[25px]"
+            href="https://archeoportfolio.github.io/dentepliosauroptmtif/"
+            target="_blank">
+            Dente Pliosauro
+          </a>
+        </div>
+        <div class="w-full overflow-hidden rounded-b-lg bg-white/60 backdrop-blur-sm dark:bg-gray-800/60 px-2 py-2">
+          <img
+            src="./assets/immenerhombea.png"
+            alt=""
+            loading="lazy"
+            height=""
+            width="" />
+          <a
+            class="font-mono mt-4 block font-semibold text-gray-800 hover:underline dark:text-white text-[15px] text-center md:text-[20px] xl:font-mono xl:text-[25px]"
+            href="https://archeoportfolio.github.io/menerhombeaptmtif/"
+            target="_blank">
+            Mene Rhombea
+          </a>
+        </div>
+        <div class="w-full overflow-hidden rounded-b-lg bg-white/60 backdrop-blur-sm dark:bg-gray-800/60 px-2 py-2">
+          <img
+            src="./assets/imgpaleosaurus.png"
+            alt=""
+            loading="lazy"
+            height=""
+            width="" />
+          <a
+            class="font-mono mt-4 block font-semibold text-gray-800 hover:underline dark:text-white text-[15px] text-center md:text-[20px] xl:font-mono xl:text-[25px]"
+            href="https://archeoportfolio.github.io/paleosaurusptmtif/"
+            target="_blank">
+            Paleosaurus
+          </a>
+        </div>
+        <div class="w-full overflow-hidden rounded-b-lg bg-white/60 backdrop-blur-sm dark:bg-gray-800/60 px-2 py-2">
+          <img
+            src="./assets/imranapujeoi.png"
+            alt=""
+            loading="lazy"
+            height=""
+            width="" />
+          <a
+            class="font-mono mt-4 block font-semibold text-gray-800 hover:underline dark:text-white text-[15px] text-center md:text-[20px] xl:font-mono xl:text-[25px]"
+            href="https://archeoportfolio.github.io/ranapujeoiptmtif/"
+            target="_blank">
+            Rana Pujeoi
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container mx-auto px-6 py-10">
+      <a
+        class="font-mono text-center mt-4 block font-semibold text-gray-800 hover:underline dark:text-white text-[15px] md:text-[20px] xl:font-mono xl:text-center xl:text-[20px]"
+        href="https://archeoportfolio.github.io/"
+        target="_blank">
+        archeopotfolio.github.io
+      </a>
+    </div>
+  </section>
+
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/2.1.8/venobox.min.js"></script>
+    <script>
+      window.AOS.init();
+      new window.VenoBox({ selector: ".cb-lightbox" });
+    </script>
+    </body>
+
+</html>
